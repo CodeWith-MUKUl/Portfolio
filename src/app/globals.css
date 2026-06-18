@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme{
+--color-grey: #8f8f8f;
+--color-white: #cacaca;
+--color-orange: #F55802;
+--color-background: #0A0A0A;
+--font-anton: var(--font-anton);
+--font-geist: var(--font-geist);
+}
+.hero {
+  background-image: url("/Assets/Images/hero5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body{
+  color: #cacaca;
+  background-color:#0A0A0A;
+}
+.about span{
+  color: #F55802;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.navbar{
+  background: linear-gradient(180deg, var(--token-62097cca-f151-4f9a-9dc9-13898e353a5a, rgb(10, 10, 10)) 0%, rgba(10, 10, 10, 0.7) 57.22304335585585%, rgba(10, 10, 10, 0) 100%);
+  width: 100%;
+  opacity: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url(/Assets/Images/portrait-hero.png);
+    background-position: top;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
