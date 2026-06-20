@@ -16,21 +16,36 @@ function About() {
  <Cursor size={56} /> 
    ]
   return (
-    <div className='w-full px-5 max-w-[1440px] mx-auto lg:pr-0 lg:px-0'>
-  <h1 className='text-grey mt-12 mb-4 text-xl lg:text-2xl'>(About Me)</h1>
+    <div className='w-full px-5 max-w-[1440px] mx-auto lg:pr-0 lg:px-0 lg:pt-10'>
+  <h1 className='text-grey mt-12 mb-4 text-xl lg:text-2xl font-bold'>(About Me)</h1>
 <div className='text about lg:flex flex-col'>
-<h1 className='relative text-4xl font-normal font-anton lg:text-right lg:text-7xl lg:leading-20'>Hey, I’m  <span>Mukul</span> a <span >Creative Frontend Developer</span> passionate about building <span >modern, interactive,</span> and <span >visually engaging</span> web experiences.</h1>
+<h1 className='relative text-4xl font-normal font-anton lg:text-right lg:text-7xl lg:leading-20 '>Hey, I’m  <span>Mukul</span> a <span >Creative Frontend Developer</span> passionate about building <span >modern, interactive,</span> and <span >visually engaging</span> web experiences.</h1>
 <div className='flex justify-end'>
-  <p className='mt-5 text-[5vw] text-grey leading-tight font-geist lg:text-2xl lg:text-right lg:w-1/2 lg:mt-8'>
+  <p className='mt-5 text-[5vw] text-grey leading-tight font-geist lg:text-2xl lg:text-right lg:w-1/2 lg:mt-14'>
 I recently completed my <span>BCA</span> with an <span>8.05 CGPA</span> and have <span>9 months</span> of industry <span>experience</span> working with startups, helping them grow through <span>clean UI, smooth interactions, and scalable</span> frontend solutions.
 </p>
 </div>
 
-<div className="skills mt-4">
-  <h1 className='text-grey mt-12 mb-4 text-xl lg:text-2xl'>(Tech Stack)</h1>
-  <div className='flex items-center justify-between flex-wrap gap-2 gap-y-4 mt-5 md:gap-10 md:justify-start lg:ml-32 lg:justify-start xl:justify-between'>
-    {icons.map((val,indx)=><div className='hover:text-orange' key={indx}>{val}</div>)}
+<div className="skills mt-4 lg:flex lg:gap-1 lg:mt-10">
+ <div className='lg:w-1/2'>
+ <h1 className='text-grey mt-12 mb-4 text-xl lg:text-2xl font-bold'>(Tech Stack)</h1>
+  <div className='flex items-center justify-between flex-wrap gap-2 gap-y-4 mt-5 md:gap-10 md:justify-start lg:ml-32 lg:justify-start xl:justify-start'>
+    {icons.map((val,indx)=><div className='hover:text-orange transition-all transition-discrete duration-150' key={indx}>{val}</div>)}
   </div>
+ </div>
+<div className='lg:w-1/2'>
+<h1 className='text-grey mt-12 mb-4 text-xl lg:text-2xl font-bold'>(Reimagine Hackathon)</h1>
+  <div className='flex items-center justify-between flex-wrap gap-2 gap-y-4 mt-5 md:gap-10 md:justify-start lg:ml-32 lg:justify-start  xl:justify-start'>
+   <h3 className='text-[5vw] text-grey leading-tight font-geist lg:text-2xl'>
+    Participated in a <span>National-Level Hackathon</span> where I collaborated with a team to transform an idea into a <span>Modern Digital Experience</span>. Led <span>UI/UX Decisions</span>, coordinated <span>Development Efforts</span>, and built <span>Interactive Interfaces</span> from <span>Scratch</span>.
+    {/* Advanced to Level 2 with Team NOOB DEVELOPERS
+
+• Led UI/UX Direction
+• Built Interactive Experiences
+• Collaborated with a 4-member Team */}
+   </h3>
+  </div>
+</div>
 </div>
 
 </div>
